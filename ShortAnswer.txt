@@ -1,0 +1,24 @@
+1. Looking at the top errors printed by get_top_misclassified, name two ways you would modify your classifier to improve accuracy (it could be features, tokenization, or something else.)
+
+Ans)=>   Two ways to modify the classifier to improve accuracy is as given below:
+	 1. In lexicon feature,by adding more relevant positive and negative words into the lists, we can improve the accuracy.
+	 2. By removing the stop words(Eg: the, a, in) from the token list during tokenization, we can improve the accuracy.
+
+
+
+2. Implement one of the above methods. How did it affect the results?
+
+
+Ans)=> 	1. Implementing the first method:
+	   After the following change in the code(a2.py)-
+		
+		neg_words = set(['bad', 'hate', 'horrible', 'worst', 'boring', 'abysmal', 'despise', 'wrong','negative','clumsy','harm','angry'])
+		pos_words = set(['awesome', 'amazing', 'best', 'good', 'great', 'love', 'wonderful', 'positive', 'cool','interesting','excellent','sweet'])
+
+	   The testing accuracy is improved from 0.730000 to 0.752500.
+
+
+
+
+
+	
